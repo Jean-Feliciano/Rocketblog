@@ -2,10 +2,11 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -17,13 +18,19 @@
     <div class="home">
       <div class="info">
         <img class="logo" src="./images/logo.svg" alt="logo do blog" />
+        <nav>
         <ul>
           <li>Home</li>
-          <li>Sobre</li>
+          <li>Contato</li>
           <li>Categorias</li>
-          <li>Sobre</li>
         </ul>
-        <input type="text" class="search" placeholder="Buscar" />
+      </nav>
+      <form class="search-bar">
+        <input class="search-input" type="search"  placeholder="Buscar">
+        <button type="submit" class="search-btn">
+          <img src="./images/search.svg">
+        </button>
+      </form>
       </div>
     </div>
     <main>
@@ -87,40 +94,45 @@
 
     <div class="cards-container">
       <div class="card">
-        <header><img src="./images/post-2.png" alt="" /></header>
+        <div>
+          <header><img src="./images/post-2.png" alt="" /></header>
         <main>
-          <span>Janeiro 04, 2022</span>
-          <span>10 dicas para conseguir a vaga desejada</span>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+          <p>Janeiro 04, 2022</p>
+          <p>10 dicas para conseguir a vaga desejada</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
             eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
             sed tristique.
-          </span>
+          </p>
         </main>
+        </div>
       </div>
       <div class="card">
-        <header><img src="./images/post-3.png" alt="" /></header>
+        <div>
+          <header><img src="./images/post-3.png" alt="" /></header>
 
         <main>
-          <span>Janeiro 04, 2022</span>
-          <span>10 dicas para conseguir a vaga desejada</span>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+          <p>Janeiro 04, 2022</p>
+          <p>10 dicas para conseguir a vaga desejada</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
             eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
             sed tristique.
-          </span>
+          </p>
         </main>
+        </div>
       </div>
       <div class="card">
+        <div>
         <header><img src="./images/post-4.png" alt="" /></header>
         <main>
-          <span>Janeiro 04, 2022</span>
-          <span>10 dicas para conseguir a vaga desejada</span>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+          <p>Janeiro 04, 2022</p>
+          <p>10 dicas para conseguir a vaga desejada</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
             eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
             sed tristique.
-          </span>
+          </p>
         </main>
       </div>
     </div>
