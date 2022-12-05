@@ -186,7 +186,6 @@ body {
 
 main .content {
   display: flex;
-  background-color: #fff;
   height: auto;
   padding: 0 25px 0 25px;
   align-items: center;
@@ -195,9 +194,10 @@ main .content {
 main .content .group {
   display: flex;
   max-width: 1920px;
+  height: auto;
+
   gap: 45px;
   margin: 0 auto 0;
-  background-color: #fff;
 }
 
 .content .react {
@@ -394,12 +394,16 @@ main .content .group {
     flex-direction: column;
   }
 
+  .home .info .search-bar {
+    display: none;
+  }
+
   .container .text-group {
     display: flex;
     align-items: center;
   }
   .container .photo {
-    width: 100%;
+    width: 80%;
 
     padding: 10px 0 10px 0;
   }
@@ -419,10 +423,6 @@ main .content .group {
     align-items: center;
   }
 
-  .content .side-post {
-    width: 569px;
-  }
-
   .content .side-post p {
     font-size: 46px;
     font-family: sans-serif;
@@ -436,7 +436,23 @@ main .content .group {
   }
 }
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 395px) {
+  .home .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .teste .text-group {
+    display: flex;
+  }
+  .content {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .container .photo {
     width: 100%;
     margin-bottom: 20px;
